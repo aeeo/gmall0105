@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <h1>index</h1>
+    <br >
+
+    <!--取值-->
+    {hello}
+    <br />
+    <p th:text="${hello}">取值</p>
+
+<!--    循环-->
+    <p th:each="str:${list}" th:text="${str}">i++</p>
+
+</body>
+</html>
